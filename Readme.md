@@ -1,7 +1,7 @@
 # Class Expenses and ExpenseDatabase: A Python OOP Project
 This project focuses on the development of an 'ExpenseDatabase' using Python's Object-Oriented Programming (OOP) concepts.
 
-Key features of this project include mastery in:
+Key features of this project includes:
 
 Defining classes.
 Using class attributes and methods.
