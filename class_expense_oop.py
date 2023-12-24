@@ -6,7 +6,7 @@ class Expense:
         self.id = str(uuid.uuid4()) #generate a unique identifier 
         self.title = title 
         self.amount = amount
-        self.created_at = datetime.now(timezone.utc)
+        self.created_at = datetime.utcnow()
         self.updated_at = self.created_at
        
               
@@ -18,7 +18,7 @@ class Expense:
             self.amount = amount
             
         #update the updated_at timestamp
-        self.updated_at = datetime.now(timezone.utc) 
+        self.updated_at = datetime.utcnow()
         
     def to_dict(self):
         #convert instance variable to to adictionary
@@ -40,7 +40,7 @@ class Expensedatabase:
         #adding an expense
         self.expenses.append(expense)
         
-        def remove_expense(self, expense_id):
+    def remove_expense(self, expense_id):
             #removing an expense
             self.expenses = [expense for expense in self.expenses if expense.id != id]
             
